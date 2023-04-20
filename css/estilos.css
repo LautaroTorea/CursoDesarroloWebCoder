@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.fondoHeader{
+    height: 20vh;
+    background-image: url(../assets/img/header\ amanecer.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.contenedorLogo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo{
+    width: 20vh;
+}
+.navegacion{
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.listaNavegacion{
+    list-style: none;
+    text-align: right;
+}
+.listaNavegacion li {
+    display: inline-block;
+    padding: 01rem;
+}
+.listaLink{
+    color: rgba(0, 101, 253, 0.705);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3vh;
+}
+    
+.fondoMain{
+    background-image: url(../assets/img/fondo\ main\ laguna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.tituloMain{
+    text-align: center;
+    font-size: 10vh;
+    color: rgb(251, 255, 0);
+}
+.introMain{
+    text-align: center;
+    font-size: 3vh;
+    color: rgb(162, 236, 12);
+}
+.subtituloMultimediaInicio{
+    text-align: left;
+    font-size: 5vh;
+    color: burlywood;
+}
+.contenedorTarjetasMultimedia{
+    text-align: justify;
+}
+.tarjetasMultimedia{
+    display: inline-block;
+    padding: 01rem;
+}
+.tarjetasMultimedia img{
+    height: 50vh;
+    width: 50vh;
+}
+.fondoFooter{
+    height: 15vh;
+    background-image: url(../assets/img/footer2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contenedorRedesSociales{
+    text-align: center;
+}
+.contenedorRedesSociales p{
+    font-size: 3vh;
+    color: orange;
+}
+.icon{
+    color: orange;
+    font-size: 5vh;
+}
+.wsp{
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.contenedorFormu{
+    margin-right: 65%;
+    margin-left: 35%;
+}
+.formulario{
+    display: block;
+    font-size: 5vh;
+}
