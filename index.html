@@ -4,69 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>CLUB DE PESCA LAS ENCADENADAS</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/8ed2b1cb03.js" crossorigin="anonymous"></script>
+    <title>CLUB DE PESCA LAS ENCADENADAS</title>
 </head>
-<body>
-    <header class="fondoHeader">
-            <div class="contenedorLogo">
-                <a href="#"><img class="logo" src="./assets/img/logo2-sinfondo.png" alt="un chico tirando la caña"></a>
+<body class="fondoIndex">
+        <header class=" container-fluid fondoHeader">
+                <div class="contenedorLogo">
+                    <a href="#"><img class="logo" src="./assets/img/logo2-sinfondo.png" alt="un chico tirando la caña"></a>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light colorBotonNavbar navegacion">
+                    <div class="container-fluid">
+                      <a class="navbar-brand listaLink" href="#">Inicio</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav listaNavegacion">
+                          <li class="nav-item listaLink">
+                            <a class="nav-link active" aria-current="page" href="./pages/galeria.html">Galeria</a>
+                          </li>
+                          <li class="nav-item listaLink">
+                            <a class="nav-link" href="./pages/lagunas.html">Lagunas</a>
+                          </li>
+                          <li class="nav-item listaLink">
+                            <a class="nav-link listaLink" href="./pages/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item listaLink">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+        </header>
+        <main class="container-fluid">
+            <div class="container-fluid text-center">
+                <h1 class="tituloMain">Bienvenidos al Club</h1>
+                <p  class="introMain">Somos un club de pesca online, nos encargamos de coordinar salidas de pesca con nuestros miembros, con grandes beneficios.</p>
+                <h2 class="subtituloMultimediaInicio">Mira algunas de las Capturas Del Club</h2>
             </div>
-            <nav class="navegacion">
-                <ul class="listaNavegacion">
-                    <li><a class="listaLink" href="#">Inicio</a></li>
-                    <li><a class="listaLink" href="./pages/galeria.html">Galeria</a></li>
-                    <li><a class="listaLink" href="./pages/lagunas.html">Lagunas</a></li>
-                    <li><a class="listaLink" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="listaLink" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!--no pude hacer traslucido a la imagen del header, la pagina principal es esta, lo unico que no inserte fue el mapa que lo puse en la pagina de lagunas, las demas las complete rapido como para llenarlas-->
-    </header>
-    <main class="fondoMain">
-        <h1 class="tituloMain">Bienvenidos al Club</h1>
-        <p  class="introMain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nam eum ducimus, hic expedita, ad vero asperiores illo a rerum cumque sapiente quod, repudiandae repellat voluptas ab esse eveniet sequi!</p>
-        <br>
-        <h2 class="subtituloMultimediaInicio">Mira algunas de las Capturas Del Club</h2>
-        <br>
-    <!-- <--aca para este div que contiene la multimedia deberia haber usado un section?? e incluso incluir el subtitulo? como afecta al html??-->
-        <div class="contenedorTarjetasMultimedia">
-            <div class="tarjetasMultimedia">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/c-THdio4GYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>    
-            <div class="tarjetasMultimedia">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f2qJGK-hjN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/pesca_tarucha.webp" class="d-block w-100" alt="tararira siendo devuelta al agua con un bogagrip">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/pesca_peje.jpg" class="d-block w-100" alt="pescador mostrando pejerrey capturado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/pesca_peje2.webp" class="d-block w-100" alt="pejerrey saltando del agua">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="tarjetasMultimedia">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tuB514RpAWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </main>
+        <footer class="container-fluid row-2">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://www.instagram.com/" target="_blank"><i class=" icon fa-brands fa-instagram px-5"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class=" icon fa-brands fa-facebook px-5"></i></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class=" wsp icon fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><i class=" icon fa-brands fa-tiktok px-5"></i></a>
             </div>
-            <div class="tarjetasMultimedia">
-                <img src="./assets/img/pesca_tarucha.webp" alt="tararira siendo devuelta al agua con un bogagrip">
+            <div class="d-flex justify-content-center align-items-center">
+                <p>Todos los Derechos Reservados</p>
             </div>
-            <div class="tarjetasMultimedia">
-                <img src="./assets/img/pesca_peje.jpg" alt="pescador mostrando pejerrey capturado">
-            </div>
-            <div class="tarjetasMultimedia">
-                <img src="./assets/img/pesca_peje2.webp" alt="pejerrey saltando del agua">
-            </div>
-            <div class="tarjetasMultimedia">
-                <img src="./assets/img/pesca_lisas.jpg" alt="pescadores mostrando lisas capturadas">
-            </div>
-        </div>
-        <!--la idea de estas imagines seria hacer un deslizable o carrusel, asi tambien le daria espacio al index para hacer referencias de las otras paginas de la navegacion, que la idea es ponerlas en el inicio-->
-    </main>
-    <footer class="fondoFooter">
-        <div class="contenedorRedesSociales">
-            <a href="https://www.instagram.com/" target="_blank"><i class=" icon fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class=" icon fa-brands fa-facebook"></i></a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class=" wsp icon fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.tiktok.com/es/" target="_blank"><i class=" icon fa-brands fa-tiktok"></i></a>
-            <p>Todos los Derechos Reservados</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<!--la idea del inicio era hacer una pagina como si fuera la vista de una laguna, de la orilla al sol y así, se que no es la idea poner las mismas imagenes en el resto de las paginas, pero me repito era para llenarlas rapido-->
