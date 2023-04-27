@@ -12,7 +12,7 @@
     background-position: center;
 }
 .fondoGaleria{
-    background-image: url(../assets/img/fondo\ galeria_640.jpg);
+    background-image: url(../assets/img/fly-fishing-geb331e34f_640.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -70,6 +70,10 @@
     height: 75%;
     object-fit: cover;
 }
+.textoGaleria{
+    font-size: medium;
+    color: rgb(245, 92, 3);
+}
  
 .fondoFooter{
     height: 15vh;
@@ -106,13 +110,13 @@
     .fondoContacto {
         background-image :url(../assets/img/fondo\ contacto-\ tablet_1280.jpg)};
     .fondoGaleria {
-        background-image :url(../assets/img/fondo\ galeria_1280.jpg)};
-    }
+        background-image :url(../assets/img/fly-fishing-g4e7fa7b79_1280.jpg)};
+}
 @media screen and (min-widht: 1025px){
     .fondoIndex { 
         background-image :url(../assets/img/fondo\ index\ escritorio_1920.jpg)};
     .fondoContacto { 
         background-image :url(../assets/img/fondo-contacto-escritorio_1920.jpg)};
     .fondoGaleria { 
-        background-image :url(../assets/img/fondo\ galeria_1920.jpg)};
-    }
+        background-image :url(../assets/img/fly-fishing-g17232f6cc_1920.jpg)};
+}
