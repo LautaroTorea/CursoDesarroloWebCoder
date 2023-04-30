@@ -47,19 +47,14 @@
     position: absolute;
     top: 25%;
     right: 0;
+    text-align: right
 }
-.listaNavegacion{
-    list-style: none;
-    text-align: right;
+.colorNav{
+    background-color: rgba(124, 224, 255, 0.308);
 }
-.colorBotonNavbar{
-    color: rgba(0, 101, 253, 0.705);
-}
-.listaLink{
-    color: rgba(0, 101, 253, 0.705);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 3vh;
+
+.navbar-light .navbar-brand .navbar-nav .nav-link .listaLink{
+    color: rgba(253, 0, 232, 0.705) !important;
 }
 
 .carousel-item{
@@ -74,7 +69,14 @@
     font-size: medium;
     color: rgb(245, 92, 3);
 }
- 
+.sizeCard{
+    width: 18rem;
+    height: 18rem;
+}
+.card-img-top{
+    object-fit: cover;
+}
+
 .fondoFooter{
     height: 15vh;
     background-size: cover;
@@ -84,7 +86,7 @@
 }
 
 .icon{
-    color: orange;
+    color: rgb(28, 236, 0);
     font-size: 5vh;
 }
 .wsp{
@@ -104,7 +106,7 @@
     display: block;
     font-size: 5vh;
 }
-@media screen and (min-widht: 600px) and (max-widht: 1024px){
+@media (min-width: 600px) and (max-width: 1024px){
     .fondoIndex {
         background-image :url(../assets/img/fondo\ index\ tablet_1280.jpg)};
     .fondoContacto {
@@ -112,7 +114,7 @@
     .fondoGaleria {
         background-image :url(../assets/img/fly-fishing-g4e7fa7b79_1280.jpg)};
 }
-@media screen and (min-widht: 1025px){
+@media (min-width: 1025px){
     .fondoIndex { 
         background-image :url(../assets/img/fondo\ index\ escritorio_1920.jpg)};
     .fondoContacto { 
