@@ -12,9 +12,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vh;*/
 }
 .fondoGaleria{
     background-image: url(../assets/img/fly-fishing-geb331e34f_640.jpg);
@@ -22,9 +22,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vh;*/
 }
 .fondoContacto{
     background-image: url(../assets/img/fondo\ contacto\ celu\ 640.jpg);
