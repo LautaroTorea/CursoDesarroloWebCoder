@@ -1,0 +1,50 @@
+.fondoHeader{
+    height: 20vh;
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .contenedorLogo{
+        position: absolute;
+        left: 0;
+        top: 0;
+        .logo{
+            width: 20vh;}    
+    }
+    .navegacion{
+        position: absolute;
+        top: 25%;
+        right: 0;
+        text-align: right;
+        .colorNav{
+            background-color: rgba(167, 233, 253, 0.562);
+            .listaLink{
+                color: rgba(0, 38, 255, 0.705) !important;
+            }
+        }
+    }
+}
+/*.contenedorLogo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo{
+    width: 20vh;
+}
+.navegacion{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    text-align: right
+}
+.colorNav{
+    background-color: rgba(167, 233, 253, 0.562);
+}
+
+.listaLink{
+    color: rgba(0, 38, 255, 0.705) !important;
+}*/

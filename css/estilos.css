@@ -1,12 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Edu NSW ACT Foundation';
-    color: rgb(255, 255, 255);
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation";
+  color: rgb(255, 255, 255);
 }
-.fondoIndex{
+
+.fondoIndex {
+  background-image: url(../assets/img/lake-gcd15e1fb5_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .fondoIndex {
+    background-image: url(../assets/img/lake-gb50fbf29f_1280.jpg);
+  }
+}
+@media (min-width: 1025px) {
+  .fondoIndex {
+    background-image: url(../assets/img/lake-g99cfb777e_1920.jpg);
+  }
+}
+.fondoGaleria {
+  background-image: url(../assets/img/fly-fishing-geb331e34f_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .fondoGaleria {
+    background-image: url(../assets/img/fly-fishing-g4e7fa7b79_1280.jpg);
+  }
+}
+@media (min-width: 1025px) {
+  .fondoGaleria {
+    background-image: url(../assets/img/fly-fishing-g17232f6cc_1920.jpg);
+  }
+}
+.fondoContacto {
+  background-image: url(../assets/img/fondo\ contacto\ celu\ 640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .fondoContacto {
+    background-image: url(../assets/img/fondo\ contacto-\ tablet_1280.jpg);
+  }
+}
+@media (min-width: 1025px) {
+  .fondoContacto {
+    background-image: url(../assets/img/fondo-contacto-escritorio_1920.jpg);
+  }
+}
+.fondoHeader {
+  height: 20vh;
+  /*background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;*/
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.fondoHeader .contenedorLogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fondoHeader .contenedorLogo .logo {
+  width: 20vh;
+}
+.fondoHeader .navegacion {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  text-align: right;
+}
+.fondoHeader .navegacion .colorNav {
+  background-color: rgba(167, 233, 253, 0.562);
+}
+.fondoHeader .navegacion .colorNav .listaLink {
+  color: rgba(0, 38, 255, 0.705) !important;
+}
+
+/*.contenedorLogo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.logo{
+    width: 20vh;
+}
+.navegacion{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    text-align: right
+}
+.colorNav{
+    background-color: rgba(167, 233, 253, 0.562);
+}
+
+.listaLink{
+    color: rgba(0, 38, 255, 0.705) !important;
+}*/
+.carousel-item {
+  height: 50vh;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover*/
+}
+
+/*.carousel-item img{
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover
+}*/
+.card {
+  background-color: rgba(255, 255, 255, 0.062745098);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.card .card-img-top {
+  object-fit: cover;
+}
+
+.img-fluid {
+  height: 100%;
+}
+
+.icon {
+  color: rgb(28, 236, 0);
+  font-size: 5vh;
+}
+
+.wsp {
+  border-radius: 50%;
+  font-size: 10vh;
+}
+
+/*.wsp{
+    border-radius: 50%;
+    font-size: 10vh;
+}*/
+/*.fondoIndex{
     background-image: url(../assets/img/lake-gcd15e1fb5_640.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,14 +185,12 @@
     flex-direction: column;
     height: 100vh;
 }
-
-
 .fondoHeader{
     height: 20vh;
-    /*background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -72,38 +223,36 @@
 .carousel-item img{
     width: 100%;
     height: 100%;
-    /*object-fit: cover;*/
-}
+    /*object-fit: cover;
+}*/
 /*.textoGaleria{
     font-size: medium;
     color: rgb(245, 92, 3);
 }*/
-.card{
+/*.card{
     background-color: #ffffff10;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-}
-.sizeCard{
+}*/
+/*.sizeCard{
     width: 18rem;
     height: 18rem;
-}
-.card-img-top{
+}*/
+/*.card-img-top{
     object-fit: cover;
-}
-.img-fluid{
+}*/
+/*.img-fluid{
     height: 90%;
-}
-
-.icon{
+}*/
+/*.icon{
     color: rgb(28, 236, 0);
     font-size: 5vh;
 }
 .wsp{
     border-radius: 50%;
-    font-size: 5vh;
-}
-
-@media (min-width: 600px) and (max-width: 1024px){
+    font-size: 10vh;
+}*/
+/*@media (min-width: 600px) and (max-width: 1024px){
     .fondoIndex {
         background-image :url(../assets/img/lake-gb50fbf29f_1280.jpg)};
 }
@@ -114,9 +263,8 @@
 @media (min-width: 600px) and (max-width: 1024px){
     .fondoGaleria {
         background-image :url(../assets/img/fly-fishing-g4e7fa7b79_1280.jpg)};
-}
-
-@media (min-width: 1025px){
+}*/
+/*@media (min-width: 1025px){
     .fondoIndex { 
         background-image :url(../assets/img/lake-g99cfb777e_1920.jpg)};
 }
@@ -127,4 +275,6 @@
 @media (min-width: 1025px){
     .fondoGaleria { 
         background-image :url(../assets/img/fly-fishing-g17232f6cc_1920.jpg)};
-}
+}*/
+
+/*# sourceMappingURL=estilos.css.map */
