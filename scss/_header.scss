@@ -1,50 +1,32 @@
 .fondoHeader{
-    height: 20vh;
-    /*background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;*/
+    height: map-get($tamañosVH, 20);
+    display: flex;
+    justify-content: space-between;
+    background-size: map-get($fondosEnComun, background-size-cover);
+    background-color: #f1f0804f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-repeat: map-get($fondosEnComun, background-repeat-no);
+    background-position: map-get($fondosEnComun, background-position-c);
+    background-attachment: map-get($fondosEnComun, background-attachment-fixed);
     position: sticky;
     top: 0;
     z-index: 10;
     .contenedorLogo{
-        position: absolute;
-        left: 0;
-        top: 0;
         .logo{
-            width: 20vh;}    
+            width: map-get($tamañosVH, 20);}    
     }
     .navegacion{
-        position: absolute;
-        top: 25%;
-        right: 0;
-        text-align: right;
+        justify-content: space-between;
         .colorNav{
-            background-color: rgba(167, 233, 253, 0.562);
+            color: $colornavegacion;
             .listaLink{
-                color: rgba(0, 38, 255, 0.705) !important;
+                @extend .colorNav;
+                font-size: map-get($tamañoFuente, masGrande);
+                &:hover{
+                color: orange
+            };
             }
         }
     }
 }
-/*.contenedorLogo{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.logo{
-    width: 20vh;
-}
-.navegacion{
-    position: absolute;
-    top: 25%;
-    right: 0;
-    text-align: right
-}
-.colorNav{
-    background-color: rgba(167, 233, 253, 0.562);
-}
-
-.listaLink{
-    color: rgba(0, 38, 255, 0.705) !important;
-}*/

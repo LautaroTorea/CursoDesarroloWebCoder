@@ -1,1 +1,33 @@
 $fuentePrincipal:"Edu NSW ACT Foundation";
+$colornavegacion: rgba(0, 38, 255, 0.705);
+$colorFuentePrincipal: rgb(255, 255, 255);
+
+
+
+
+
+
+/*maps*/
+$tamañoFuente:(
+    normal : 1rem,
+    grande : 2rem,
+    masGrande : 3rem,
+    h1: 5rem
+);
+$fondosEnComun: (
+    background-size-cover: cover,
+    background-repeat-no: no-repeat,
+    background-position-c: center,
+    background-attachment-fixed: fixed
+);
+$tamañosVH:(
+    100: 100vh,
+    75: 75vh,
+    50: 50vh,
+    35: 35vh,
+    25: 25vh,
+    20: 20vh,
+    15: 15vh,
+    10: 10vh,
+    5: 5vh
+);

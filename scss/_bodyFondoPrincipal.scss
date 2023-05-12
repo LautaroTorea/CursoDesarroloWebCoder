@@ -1,10 +1,9 @@
 .fondoIndex{
     background-image: url(../assets/img/lake-gcd15e1fb5_640.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+    background-size: map-get($fondosEnComun, background-size-cover);
+    background-repeat: map-get($fondosEnComun, background-repeat-no);
+    background-position: map-get($fondosEnComun, background-position-c);
+    background-attachment: map-get($fondosEnComun, background-attachment-fixed);
 }
 @media (min-width: 600px) and (max-width: 1024px){
     .fondoIndex {
