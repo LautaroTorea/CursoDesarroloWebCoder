@@ -1,5 +1,5 @@
 .tituloGaleria{
-    color: #0177ad;
+    @include titulos (#0177ad);
 }
 .card{
     background-color: #ffffff10;

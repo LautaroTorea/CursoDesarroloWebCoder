@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/favicon-removebg-preview.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/8ed2b1cb03.js" crossorigin="anonymous"></script>
@@ -43,32 +44,32 @@
             </div>
         </nav>
     </header>
-    <main class="fondoMain">
+    <main>
         <div class="container-fluid text-center">
-            <h1> Dejanos Tu Consulta </h1>
-            <p> Recorda que si te es mas sencillo y directo, podemos responder tu consulta las 24 hs. por medio de Wsp,
-                podes encontrar el enlace para hacerlo abajo a la derecha de la pantalla</p>
+            <h1 class="tituloContacto"> Dejanos Tu Consulta </h1>
+            <p class="parrafoContacto"> Recorda que si te es mas sencillo y directo, podemos responder tu consulta las 24 hs. por medio de Wsp,
+                podes encontrar el enlace para hacerlo abajo a la derecha de la pantalla.</p>
         </div>
-        <form class="container d-block align-items-center">
+        <form class="container d-block align-items-center estiloForm">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">ingrese aqui su nombre y apellido</span>
+                <span class="input-group-text estiloForm" id="basic-addon1">ingrese aqui su nombre y apellido</span>
                 <input type="text" class="form-control" placeholder="ingrese aqui su nombre y apellido"
-                    aria-label="Username" aria-describedby="basic-addon1">
+                    aria-label="Username" aria-describedby="basic-addon1" required>
             </div>
 
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="ingrese aqui su correo electrónico"
-                    aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    aria-label="Recipient's username" aria-describedby="basic-addon2"required>
+                <span class="input-group-text estiloForm" id="basic-addon2">@example.com</span>
             </div>
 
-            <div class="input-group">
-                <span class="input-group-text">Ingrese el motivo de su consulta</span>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
+            <div class="input-group mb-3">
+                <span class="input-group-text estiloForm" required>Ingrese el motivo de su consulta</span>
+                <input type="text" class="form-control" required>
             </div>
-            <div class="d-flex">
-                <input class="formulario" type="submit" value="Enviar Consulta">
-                <input class="formulario" type="reset" value="Borrar">
+            <div class="botones mb-3">
+                <input class="formulario estiloForm" type="reset" value="Borrar">
+                <input class="formulario estiloForm" type="submit" value="Contactarse">
             </div>
         </form>
     </main>
@@ -78,7 +79,7 @@
             <a href="https://www.facebook.com" target="_blank"><i class=" icon fa-brands fa-facebook px-5"></i></a>
             <a href="https://www.tiktok.com/es/" target="_blank"><i class=" icon fa-brands fa-tiktok px-5"></i></a>
         </div>
-        <div class="position-absolute bottom-0 end-0">
+        <div class="position-absolute bottom-0 end-0 m-2">
             <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
                     class="wsp icon fa-brands fa-whatsapp"></i></a>
         </div>

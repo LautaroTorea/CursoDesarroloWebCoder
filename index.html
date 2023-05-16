@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon-removebg-preview.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/8ed2b1cb03.js" crossorigin="anonymous"></script>
@@ -45,7 +46,7 @@
     </header>
     <main class="container">
         <div class="container text-center">
-            <h1>Bienvenidos al Club</h1>
+            <h1 class="tituloIndex">Bienvenidos al Club</h1>
             <p class="parrafoInicio">Somos un club de pesca online, nos encargamos de coordinar salidas de pesca con nuestros miembros, con
                 grandes beneficios.</p>
             <h2 class="subsInicio">Mira algunas de las Capturas Del Club</h2>
@@ -80,19 +81,40 @@
         <div class="container text-center m-5">
             <h2 class="subsInicio">TAMBIEN TENEMOS ALGUNOS VIDEOS</h2>
         </div>
-        <div class="container m-5">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/av41-U2uILI"
+        <div id="carouselExampleIndicators" class="carousel slide m-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/av41-U2uILI"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xPYMxZb2-9k"
+              </div>
+              <div class="carousel-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xPYMxZb2-9k"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/BDCqKk0AGC4"
+              </div>
+              <div class="carousel-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BDCqKk0AGC4"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>-->
+                allowfullscreen></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
     <footer class="container-fluid position-relative mt-auto">
@@ -101,7 +123,7 @@
             <a href="https://www.facebook.com" target="_blank"><i class=" icon fa-brands fa-facebook px-5"></i></a>
             <a href="https://www.tiktok.com/es/" target="_blank"><i class=" icon fa-brands fa-tiktok px-5"></i></a>
         </div>
-        <div class="position-absolute bottom-0 end-0">
+        <div class="position-absolute bottom-0 end-0 m-2">
             <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
                     class="wsp icon fa-brands fa-whatsapp"></i></a>
         </div>

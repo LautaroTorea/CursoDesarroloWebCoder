@@ -1,5 +1,5 @@
 .tituloLagunas{
-    color: rgb(44, 189, 0);
+    @include titulos (rgb(44, 189, 0));
 }
 .img-fluid{
     height: 100%;
