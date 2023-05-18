@@ -8,6 +8,23 @@
   color: rgb(255, 255, 255);
 }
 
+@keyframes olas {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .card {
   background-color: rgba(255, 255, 255, 0.062745098);
   backdrop-filter: blur(12px);
@@ -91,7 +108,11 @@
   font-size: 3rem;
 }
 .fondoHeader .navegacion .colorNav .listaLink:hover {
-  color: orange;
+  background-color: rgba(196, 255, 252, 0.623);
+  border-radius: 80%;
+}
+.fondoHeader .navegacion .colorNav .desplegable {
+  align-items: center;
 }
 
 .mainIndex .divTituloInicio .tituloIndex {
@@ -128,27 +149,39 @@
   font-size: 5rem;
   color: #0177ad;
 }
-.mainGaleria .primerGrupoTarjetas .card-img-top {
+.mainGaleria .primerGrupoTarjetas .zoom {
+  transition: transform 2s;
+}
+.mainGaleria .primerGrupoTarjetas .zoom:hover {
+  transform: scale(1.2, 1.2);
+}
+.mainGaleria .primerGrupoTarjetas .zoom .card-img-top {
   height: 100%;
   object-fit: cover;
 }
-.mainGaleria .primerGrupoTarjetas .cuerpoTarjeta h3 {
+.mainGaleria .primerGrupoTarjetas .zoom .cuerpoTarjeta h3 {
   font-size: 1rem;
   color: rgb(127, 197, 255);
 }
-.mainGaleria .primerGrupoTarjetas .pieTarjeta .registoGaleria {
+.mainGaleria .primerGrupoTarjetas .zoom .pieTarjeta .registoGaleria {
   font-size: 1rem;
   color: rgba(3, 204, 194, 0.897);
 }
-.mainGaleria .segundoGrupoTarjetas .card-img-top {
+.mainGaleria .segundoGrupoTarjetas .zoom {
+  transition: transform 2s;
+}
+.mainGaleria .segundoGrupoTarjetas .zoom:hover {
+  transform: scale(1.2, 1.2);
+}
+.mainGaleria .segundoGrupoTarjetas .zoom .card-img-top {
   height: 100%;
   object-fit: cover;
 }
-.mainGaleria .segundoGrupoTarjetas .cuerpoTarjeta h3 {
+.mainGaleria .segundoGrupoTarjetas .zoom .cuerpoTarjeta h3 {
   font-size: 1rem;
   color: rgb(127, 197, 255);
 }
-.mainGaleria .segundoGrupoTarjetas .pieTarjeta .registoGaleria {
+.mainGaleria .segundoGrupoTarjetas .zoom .pieTarjeta .registoGaleria {
   font-size: 1rem;
   color: rgba(3, 204, 194, 0.897);
 }
@@ -241,6 +274,10 @@
   color: rgb(28, 236, 0);
   font-size: 3vh;
 }
+.fondoFooter .contenedorRedesSociales .wsp {
+  color: rgb(28, 236, 0);
+  font-size: 3vh;
+}
 
 @media (min-width: 1025px) {
   .fondoFooter {
@@ -256,8 +293,10 @@
     font-size: 5vh;
     padding-left: 3rem;
     padding-right: 3rem;
+    animation: olas infinite ease 5s;
   }
   .fondoFooter .contenedorRedesSociales .wsp {
+    color: rgb(28, 236, 0);
     border-radius: 50%;
     font-size: 10vh;
     position: absolute;

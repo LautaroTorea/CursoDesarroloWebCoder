@@ -24,7 +24,11 @@
                 @extend .colorNav;
                 font-size: map-get($tamañoFuente, masGrande);
                 &:hover{
-                color: orange};
+                background-color: rgba(196, 255, 252, 0.623);
+                border-radius: 80%};
+            }
+            .desplegable{
+                align-items: center;
             }
         }
     }

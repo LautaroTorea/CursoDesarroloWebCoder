@@ -6,39 +6,51 @@
     }
 
     .primerGrupoTarjetas {
-        .card-img-top {
-            height: 100%;
-            object-fit: cover;
+        .zoom{
+        transition: transform 2s;
+        &:hover{
+        transform: scale(1.2,1.2);
         }
-        .cuerpoTarjeta {
-            h3 {
-                font-size: map-get($tamañoFuente, normal);
-                color: rgb(127, 197, 255);
+            .card-img-top {
+                height: 100%;
+                object-fit: cover;
             }
-        }
-        .pieTarjeta {
-            .registoGaleria {
-                font-size: map-get($tamañoFuente, normal);
-                color: rgba(3, 204, 194, 0.897);
+            .cuerpoTarjeta {
+                h3 {
+                    font-size: map-get($tamañoFuente, normal);
+                    color: rgb(127, 197, 255);
+                }
+            }
+            .pieTarjeta {
+                .registoGaleria {
+                    font-size: map-get($tamañoFuente, normal);
+                    color: rgba(3, 204, 194, 0.897);
+                }
             }
         }
     }
 
     .segundoGrupoTarjetas {
-        .card-img-top {
-            height: 100%;
-            object-fit: cover;
+        .zoom{
+        transition: transform 2s;
+        &:hover{
+        transform: scale(1.2,1.2);
         }
-        .cuerpoTarjeta {
-            h3 {
-                font-size: map-get($tamañoFuente, normal);
-                color: rgb(127, 197, 255);
+            .card-img-top {
+                height: 100%;
+                object-fit: cover;
             }
-        }
-        .pieTarjeta {
-            .registoGaleria {
-                font-size: map-get($tamañoFuente, normal);
-                color: rgba(3, 204, 194, 0.897);
+            .cuerpoTarjeta {
+                h3 {
+                    font-size: map-get($tamañoFuente, normal);
+                    color: rgb(127, 197, 255);
+                }
+            }
+            .pieTarjeta {
+                .registoGaleria {
+                    font-size: map-get($tamañoFuente, normal);
+                    color: rgba(3, 204, 194, 0.897);
+                }
             }
         }
     }
