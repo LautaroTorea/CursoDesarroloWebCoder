@@ -1,19 +1,45 @@
-.tituloGaleria{
-    @include titulos (#0177ad);
-}
-.card{
-    background-color: #ffffff10;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    .card-img-top{
-        height: 100%;
-        object-fit: cover;}
-    h3 {
-        font-size: map-get($tamañoFuente, normal);
-        color: rgb(127, 197, 255);
+.mainGaleria {
+    .divTituloGaleria {
+        .tituloGaleria {
+            @include titulos (#0177ad);
         }
-    .registoGaleria{
-        font-size: map-get($tamañoFuente, normal);
-        color: rgba(3, 204, 194, 0.897);
+    }
+
+    .primerGrupoTarjetas {
+        .card-img-top {
+            height: 100%;
+            object-fit: cover;
+        }
+        .cuerpoTarjeta {
+            h3 {
+                font-size: map-get($tamañoFuente, normal);
+                color: rgb(127, 197, 255);
+            }
+        }
+        .pieTarjeta {
+            .registoGaleria {
+                font-size: map-get($tamañoFuente, normal);
+                color: rgba(3, 204, 194, 0.897);
+            }
+        }
+    }
+
+    .segundoGrupoTarjetas {
+        .card-img-top {
+            height: 100%;
+            object-fit: cover;
+        }
+        .cuerpoTarjeta {
+            h3 {
+                font-size: map-get($tamañoFuente, normal);
+                color: rgb(127, 197, 255);
+            }
+        }
+        .pieTarjeta {
+            .registoGaleria {
+                font-size: map-get($tamañoFuente, normal);
+                color: rgba(3, 204, 194, 0.897);
+            }
+        }
     }
 }

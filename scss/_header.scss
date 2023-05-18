@@ -24,8 +24,7 @@
                 @extend .colorNav;
                 font-size: map-get($tamañoFuente, masGrande);
                 &:hover{
-                color: orange
-            };
+                color: orange};
             }
         }
     }
