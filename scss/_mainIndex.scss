@@ -1,0 +1,38 @@
+.mainIndex{
+    .divTituloInicio{
+        .tituloIndex{
+        @include titulos ($colorFuentePrincipal);
+        }
+        .parrafoInicio{
+        font-size: map-get($tamañoFuente, grande);
+        }
+        .subsInicio{
+        font-size: map-get($tamañoFuente, masGrande);
+        }
+    }
+    .contenedorPrimerCarrusel{
+        .carousel-item{
+        height: map-get($tamañosVH, 50);
+            img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+            }
+        }
+    }
+    .introSegundoCarrusel{
+        .subsInicio{
+            font-size: map-get($tamañoFuente, masGrande)
+        }
+    }
+    .segundoCarrusel{
+        .carousel-item{
+        height: map-get($tamañosVH, 50);
+            iframe{
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+            }
+        }
+    }
+}

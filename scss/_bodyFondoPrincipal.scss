@@ -1,0 +1,16 @@
+.fondoIndex{
+    background-image: url(../assets/img/lake-gcd15e1fb5_640.jpg);
+    background-size: map-get($fondosEnComun, background-size-cover);
+    background-repeat: map-get($fondosEnComun, background-repeat-no);
+    background-position: map-get($fondosEnComun, background-position-c);
+    background-attachment: map-get($fondosEnComun, background-attachment-fixed);
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    .fondoIndex {
+        background-image :url(../assets/img/lake-gb50fbf29f_1280.jpg)};
+}
+
+@media (min-width: 1025px){
+    .fondoIndex { 
+        background-image :url(../assets/img/lake-g99cfb777e_1920.jpg)};
+}

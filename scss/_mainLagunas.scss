@@ -1,0 +1,58 @@
+.mainLagunas{
+    .contenedorTitulolagunas{
+        .tituloLagunas{
+        @include titulos (rgb(44, 189, 0));
+        }
+    }
+    .primeraLaguna{
+        .img-fluid{
+            height: 100%;
+            width: 100%;
+        }
+        .cuerpoTarjeta{
+            .card-title{
+                text-align: center;
+                font-size: map-get($tamañoFuente, grande);
+                color: rgb(4, 233, 42);
+            }
+            .descripLag{
+                text-align: justify;
+                color: rgb(92, 223, 81);
+            }
+        }
+    }
+    .primerGrupoLagunas{
+        .img-fluid{
+            height: 100%;
+            width: 100%;
+        }
+        .cuerpoTarjeta{
+            .card-title{
+                text-align: center;
+                font-size: map-get($tamañoFuente, grande);
+                color: rgb(4, 233, 42);
+            }
+            .descripLag{
+                text-align: justify;
+                color: rgb(92, 223, 81);
+            }
+        }
+    }
+    .segundoGrupoLagunas{
+        .img-fluid{
+            height: 100%;
+            width: 100%;
+        }
+        .cuerpoTarjeta{
+            .card-title{
+                text-align: center;
+                font-size: map-get($tamañoFuente, grande);
+                color: rgb(4, 233, 42);
+            }
+            .descripLag{
+                text-align: justify;
+                color: rgb(92, 223, 81);
+            }
+        }
+    }
+}

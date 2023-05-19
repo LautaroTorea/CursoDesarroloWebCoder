@@ -1,0 +1,17 @@
+.fondo404{
+    background-image: url(../assets/img/fondo\ galeria_1280.jpg);
+    background-size: map-get($fondosEnComun, background-size-cover);
+    background-repeat: map-get($fondosEnComun, background-repeat-no);
+    background-position: map-get($fondosEnComun, background-position-c);
+    background-attachment: map-get($fondosEnComun, background-attachment-fixed);
+    display: flex;
+    height: 100vh;
+    .text404{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: map-get($tamañoFuente,h1);
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,35 @@
+.fondoHeader{
+    height: map-get($tamañosVH, 20);
+    display: flex;
+    justify-content: space-between;
+    background-size: map-get($fondosEnComun, background-size-cover);
+    background-color: #f1f0804f;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-repeat: map-get($fondosEnComun, background-repeat-no);
+    background-position: map-get($fondosEnComun, background-position-c);
+    background-attachment: map-get($fondosEnComun, background-attachment-fixed);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .contenedorLogo{
+        .logo{
+            width: map-get($tamañosVH, 20);}    
+    }
+    .navegacion{
+        justify-content: space-between;
+        .colorNav{
+            color: $colornavegacion;
+            .listaLink{
+                @extend .colorNav;
+                font-size: map-get($tamañoFuente, masGrande);
+                &:hover{
+                background-color: rgba(196, 255, 252, 0.623);
+                border-radius: 80%};
+            }
+            .desplegable{
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.fondoGaleria{
+    @extend .fondoIndex;
+    background-image: url(../assets/img/fly-fishing-geb331e34f_640.jpg);
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+    .fondoGaleria {
+        background-image :url(../assets/img/fly-fishing-g4e7fa7b79_1280.jpg)};
+}
+@media (min-width: 1025px){
+    .fondoGaleria { 
+        background-image :url(../assets/img/fly-fishing-g17232f6cc_1920.jpg)};
+}

@@ -1,0 +1,19 @@
+.mainContacto{
+        .divTituloContacto{
+            .tituloContacto{
+                @include titulos ($colorContacto);
+            }
+            .parrafoContacto{
+                @extend .tituloContacto;
+                font-size: map-get($tamañoFuente, texto);
+            }
+        }
+        .estiloForm{
+        color: $colorContacto;
+        font-size: map-get($tamañoFuente, grande);
+            .botones{
+            display: flex;
+            justify-content: space-evenly;
+            }
+        }
+}

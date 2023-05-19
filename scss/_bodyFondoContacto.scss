@@ -1,0 +1,15 @@
+.fondoContacto{
+    @extend .fondoIndex;
+    background-image: url(../assets/img/fondo\ contacto\ celu\ 640.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+@media (min-width: 600px) and (max-width: 1024px){
+    .fondoContacto {
+        background-image :url(../assets/img/fondo\ contacto-\ tablet_1280.jpg)};
+}
+@media (min-width: 1025px){
+    .fondoContacto { 
+        background-image :url(../assets/img/fondo-contacto-escritorio_1920.jpg)};
+}

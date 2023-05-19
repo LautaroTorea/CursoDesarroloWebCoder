@@ -1,0 +1,27 @@
+.mainNosotros{
+    .tituloNosotros{
+    @include titulos (rgb(171, 255, 255));
+    }
+    .tarjetaPrincipalNosotros{
+        .parrafoIntro{
+        font-size: map-get($tamañoFuente, texto);
+        }
+        .card-subtitle{
+        text-decoration: underline;
+        }
+        .listaPadre{
+            li{
+                @extend .parrafoIntro
+            }
+        }
+        .tipoPesca{
+        text-decoration: underline;
+        color: rgb(1, 216, 231);
+        font-size: map-get($tamañoFuente, grande);
+        }
+        .reglas{
+        color: rgb(141, 23, 3);
+        }
+    }
+}
+
